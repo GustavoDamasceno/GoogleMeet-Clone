@@ -6,7 +6,7 @@
     left: 23px;
     top: 20px;
 
-    background: blue;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,3 +40,48 @@
     background: url('../../Images/perfil.png');
     background-size: cover;
 }
+
+.disco{
+    position: absolute;
+    height: 60%;
+    right: 55px;
+}
+
+.disco:hover{
+    cursor: pointer;
+    height: 65%;
+}
+
+.config{
+    position: absolute;
+    height: 60%;
+    right: 140px;
+}
+
+.config:hover{
+    cursor: pointer;
+    height: 65%;
+}
+
+.info{
+    position: absolute;
+    height: 60%;
+    right: 180px;
+}
+
+.info:hover{
+    cursor: pointer;
+    height: 65%;
+}
+
+.duvida{
+    position: absolute;
+    height: 60%;
+    right: 220px;
+}
+
+.duvida:hover{
+    cursor: pointer;
+    height: 65%;
+}
+

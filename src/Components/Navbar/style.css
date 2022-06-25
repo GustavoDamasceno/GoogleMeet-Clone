@@ -85,3 +85,33 @@
     height: 65%;
 }
 
+
+
+.txthours{
+    width: 45px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: #4A4A4A;
+    right: 425px;
+
+}
+
+.data{
+    width: 115px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: #4A4A4A;
+    right: 300px;
+
+}
+
+.point{
+    width: 15px;
+    position: absolute;
+    font-size: 20px;
+    right: 408px;
+}

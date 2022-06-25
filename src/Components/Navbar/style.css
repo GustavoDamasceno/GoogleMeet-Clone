@@ -54,35 +54,35 @@
 
 .config{
     position: absolute;
-    height: 60%;
+    height: 55%;
     right: 140px;
 }
 
 .config:hover{
     cursor: pointer;
-    height: 65%;
+    height: 60%;
 }
 
 .info{
     position: absolute;
-    height: 60%;
+    height: 55%;
     right: 180px;
 }
 
 .info:hover{
     cursor: pointer;
-    height: 65%;
+    height: 60%;
 }
 
 .duvida{
     position: absolute;
-    height: 60%;
+    height: 55%;
     right: 220px;
 }
 
 .duvida:hover{
     cursor: pointer;
-    height: 65%;
+    height: 60%;
 }
 
 

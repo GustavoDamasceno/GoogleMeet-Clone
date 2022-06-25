@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css'
 
 import logo from '../../Images/logo.svg'
@@ -9,15 +9,23 @@ import duvida from '../../Images/duvida.svg'
 
 
 function Navbar() {
-    const hora = 17;
-    const minuto = 45;
+    const [dateHour, setDateHour] = useState();
+    const [dateMinute, setDateMinute] = useState();
+
+    useEffect(() => {
+        const id = setInterval(() => setDateHour(new Date().getHours()));
+        const id1 = setInterval(() => setDateMinute(new Date().getMinutes()));
+        return () => {
+            clearInterval(id, id1);
+        }
+    }, []);
 
     return(
         <div className="navcontain">
             <img className='logoimg' src={logo} />
             <p className='tittlebar'>Google Meet</p>
 
-            <p className='txthours'>{hora}:{minuto}</p>
+            <p className='txthours'>{dateHour}:{dateMinute}</p>
             <p className='point'>•</p>
             <p className='data'>Mon, 21 Feb</p>
 

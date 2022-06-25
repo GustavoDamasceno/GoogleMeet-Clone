@@ -1,0 +1,10 @@
+.bgcontain{
+    position: absolute;
+    width: 41.32vw;
+    height: 41.9vh;
+
+    left: 5.67vw;
+    top: 37.78vh;
+
+    background: blue;
+}

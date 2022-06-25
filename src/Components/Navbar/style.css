@@ -1,0 +1,42 @@
+.navcontain{
+    position: absolute;
+    width: 97.34vw;
+    height: 6.71vh;
+
+    left: 23px;
+    top: 20px;
+
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoimg{
+    height: 100%;
+}
+
+.tittlebar{
+    position: absolute;
+    right: 700px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    /* identical to box height */
+
+
+    color: #4A4A4A;
+}
+
+.perfil{
+    position: absolute;
+    width: 2.5%;
+    height: 80%;
+    border-radius: 50%;
+    right: 4px;
+
+    background: url('../../Images/perfil.png');
+    background-size: cover;
+}

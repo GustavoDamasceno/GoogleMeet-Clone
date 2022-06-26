@@ -13,14 +13,16 @@ function Navbar() {
     const [dateMinute, setDateMinute] = useState();
     const [dateDay, setDateDay] = useState();
     const [dateMonth, setDateMonth] = useState();
+    const [dateNumberday, setDateNumberday] = useState();
 
     useEffect(() => {
         const id = setInterval(() => setDateHour(new Date().getHours()));
         const id1 = setInterval(() => setDateMinute(new Date().getMinutes()));
         const id2 = setInterval(() => setDateDay(new Date().getDay()));
         const id3 = setInterval(() => setDateMonth(new Date().getMonth()));
+        const id4 = setInterval(() => setDateNumberday(new Date().getUTCDate()));
         return () => {
-            clearInterval(id, id1, id2, id3);
+            clearInterval(id, id1, id2, id3, id4);
         }
     }, []);
 
@@ -33,7 +35,7 @@ function Navbar() {
 
             <p className='txthours'>{dateHour}:{dateMinute}</p>
             <p className='point'>•</p>
-            <p className='data'>{day[dateDay]}, 21 {month[dateMonth]}</p>
+            <p className='data'>{day[dateDay]}, {dateNumberday} {month[dateMonth]}</p>
 
             <img className='duvida' src={duvida} />
             <img className='info' src={info} />

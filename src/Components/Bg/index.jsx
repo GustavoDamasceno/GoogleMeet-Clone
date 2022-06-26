@@ -6,7 +6,7 @@ function Bg() {
             <h3>Premium video meetings. Now free for everyone.</h3>
             <p className='txtbg'>We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
             <div className='blocoinput'>
-                <button>New meeting</button>
+                <button><p>New meeting</p></button>
                 <input placeholder='Enter a code or link'></input>
             </div>
             <hr/>
